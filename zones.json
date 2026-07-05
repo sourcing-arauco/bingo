@@ -1,0 +1,110 @@
+[
+  {
+    "id": "zone_bluey",
+    "sound": "characters/bluey",
+    "fallbackNote": "C4",
+    "left": 55,
+    "top": 58,
+    "width": 10,
+    "height": 27
+  },
+  {
+    "id": "zone_bingo",
+    "sound": "characters/bingo",
+    "fallbackNote": "E4",
+    "left": 33,
+    "top": 67,
+    "width": 11,
+    "height": 27
+  },
+  {
+    "id": "zone_bandit",
+    "sound": "characters/bandit",
+    "fallbackNote": "G4",
+    "left": 60,
+    "top": 33,
+    "width": 10,
+    "height": 34
+  },
+  {
+    "id": "zone_chilli",
+    "sound": "characters/chilli",
+    "fallbackNote": "C5",
+    "left": 53,
+    "top": 37,
+    "width": 8,
+    "height": 26
+  },
+  {
+    "id": "zone_elephant",
+    "sound": "animals/elephant",
+    "left": 1,
+    "top": 35,
+    "width": 17,
+    "height": 30
+  },
+  {
+    "id": "zone_cow",
+    "sound": "animals/cow",
+    "left": 76,
+    "top": 60,
+    "width": 22,
+    "height": 28
+  },
+  {
+    "id": "zone_sheep",
+    "sound": "animals/sheep",
+    "left": 67,
+    "top": 63,
+    "width": 10,
+    "height": 21
+  },
+  {
+    "id": "zone_parrot",
+    "sound": "animals/loro",
+    "left": 20,
+    "top": 50,
+    "width": 6,
+    "height": 20
+  },
+  {
+    "id": "zone_lion",
+    "sound": "animals/lion",
+    "left": 83,
+    "top": 42,
+    "width": 13,
+    "height": 18
+  },
+  {
+    "id": "zone_bear",
+    "sound": "animals/bear",
+    "left": 20,
+    "top": 35,
+    "width": 11,
+    "height": 17
+  },
+  {
+    "id": "zone_crocodile",
+    "sound": "animals/cocodrilo",
+    "left": 29,
+    "top": 53,
+    "width": 19,
+    "height": 9
+  },
+  {
+    "id": "zone_monkey",
+    "sound": "animals/monkey",
+    "left": 30,
+    "top": 7,
+    "width": 9,
+    "height": 23
+  },
+  {
+    "id": "zone_giraffe",
+    "sound": "animals/jirafa",
+    "left": 71,
+    "top": 13,
+    "width": 11,
+    "height": 48
+  }
+]

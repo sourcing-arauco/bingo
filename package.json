@@ -1,0 +1,15 @@
+{
+  "name": "bluey-tablet-soundboard",
+  "version": "1.0.0",
+  "description": "Soundboard app for tablets featuring Bluey characters and animals",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "download-sounds": "node download-sounds.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

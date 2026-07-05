@@ -1,0 +1,93 @@
+/* Reset & Core Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Fullscreen Background Video */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05); /* Extremely light tint to preserve original video colors */
+}
+
+
+
+/* Interactive Hitspot Overlay Layer */
+#overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+/* Invisible Hotspots */
+.hotspot {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0); /* Completely transparent */
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  transition: background-color 0.1s ease;
+}
+
+/* Subtle tap response for visual feedback (can be removed, but good for feedback) */
+.hotspot:active, .hotspot.playing {
+  background-color: rgba(255, 255, 255, 0.15); /* very quick flashes of light white when tapped */
+}
+
+/* Particle effect */
+.particle {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 999;
+  animation: particle-fly 0.8s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+}
+
+@keyframes particle-fly {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx), var(--dy)) scale(0);
+    opacity: 0;
+  }
+}
