@@ -185,3 +185,42 @@ if ('serviceWorker' in navigator) {
       .catch(err => console.error('Service Worker registration failed:', err));
   });
 }
+
+// Fullscreen API Logic
+const fullscreenBtn = document.getElementById('fullscreen-btn');
+
+fullscreenBtn.addEventListener('pointerdown', (e) => {
+  e.preventDefault();
+  toggleFullscreen();
+});
+
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen()
+      .then(() => {
+        fullscreenBtn.textContent = '❌'; // change icon to close in fullscreen
+      })
+      .catch(err => console.error('Error entering fullscreen:', err));
+  } else {
+    document.exitFullscreen()
+      .then(() => {
+        fullscreenBtn.textContent = '⛶';
+      })
+      .catch(err => console.error('Error exiting fullscreen:', err));
+  }
+}
+
+// Automatic Fullscreen on First Tap (User Gesture)
+document.addEventListener('pointerdown', (e) => {
+  // Ignore if they clicked the fullscreen button itself
+  if (e.target === fullscreenBtn) return;
+  
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen()
+      .then(() => {
+        fullscreenBtn.textContent = '❌';
+      })
+      .catch(err => console.log('Auto-fullscreen blocked or failed:', err));
+  }
+}, { once: true }); // triggers only once
+

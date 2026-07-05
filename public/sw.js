@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bluey-soundboard-v1';
+const CACHE_NAME = 'bluey-soundboard-v2';
 const ASSETS = [
   '/',
   '/index.html',
@@ -10,6 +10,8 @@ const ASSETS = [
   '/bandit.png',
   '/chilli.png',
   '/muffin.png',
+  '/icon-192.png',
+  '/icon-512.png',
   '/api/zones' // cache the coordinates so it works offline
 ];
 
